@@ -336,7 +336,7 @@ button.btn-dark:hover {
 
 
 #eng {
-  background-image: url("Flag_of_the_United_Kingdom_(3-5).svg") !important;
+  background-image: url("Flag_of_the_United_Kingdom_(3-5).svg");
   background-position: center;
   background-size: cover;
   position: fixed !important;
@@ -344,12 +344,11 @@ button.btn-dark:hover {
   left: 20px !important; 
   z-index: 9999 !important;
   
-  
-}
-#eng:hover {
+  &:hover {
     background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
    
   }
+}
 
 #ukr {
   background-image: url("Flag_of_Ukraine.svg.webp");
