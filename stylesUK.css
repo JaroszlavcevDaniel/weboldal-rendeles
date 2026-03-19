@@ -1,0 +1,375 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+/*  HERO ONE */
+header {
+  background-image: url(backThree.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*  HERO TWO */
+.hero2 {
+  background: linear-gradient(
+    135deg,
+    #f9d42310,
+    #ff4e5010,
+    #8e2de210
+  );
+}
+
+.hero2-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero2-text {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.feature-box {
+  background: #fff;
+  border-radius: 16px;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+  border-radius: 10px;
+}
+
+.textShadow {
+  text-shadow: 5px 5px 5px #5b5b5b !important;
+}
+/*  FONT  */
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parallax-section {
+  min-height: 80vh;
+
+  /*  PARALLAX  SZEKCIÓ*/
+  background-image: url("multiracial-four-friends-at-home-party-talking-on-couch-emotional-discussion-arguing-smiling-diverse-people-communicate-in-living-room-women-girls-men-guys-together-conversation-debate-problem-discuss-video.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.parallax-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  color: white;
+
+  max-width: 700px;
+  margin: auto;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+  border-radius: 10px;
+}
+
+/* REFERENCE */
+.projects {
+  background: linear-gradient(
+    135deg,
+    #f5eecd50 ,
+    #ffe1e145 ,
+    #f5eaff24
+  );
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.projects-text {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+
+.card-1:hover{
+  background-image: url('webshop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-1:hover .hide-on-hover{
+ display: none !important;
+}
+
+.card-2:hover {
+  background-image: url('rideRock.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-2:hover .hide-on-hover{
+ display: none !important;
+}
+
+.card-3:hover {
+  background-image: url('restaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-3:hover .hide-on-hover{
+ display: none !important;
+}
+
+
+
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+  border-radius: 10px;
+}
+
+/* FORM + ABOUT ME */
+
+.contact-section {
+  background: linear-gradient(
+    135deg,
+    #f9d42310,
+    #ff4e5010,
+    #8e2de210
+  );
+}
+
+/* form box */
+.contact-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* about */
+.about-box img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button.btn-dark {
+  border-radius: 10px;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+button.btn-dark:hover {
+  background: #000;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #111;
+  color: #ccc;
+}
+
+.footer h5 {
+  color: #fff;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+
+.footer hr {
+  border-color: rgba(255,255,255,0.1);
+}
+
+
+.footer::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;           
+  height: 5px;
+  z-index: 9999;
+  background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+  transition: width 0.1s ease-out;
+}
+
+.social-links a {
+  color: #fff;
+  display: inline-flex;
+  transition: 0.3s;
+}
+
+.hovi, .social-links a:hover {
+  transform: translateY(-3px);
+  color: #f9d423; 
+}
+
+.social-links svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* cookie banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  flex-wrap: wrap;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cookie-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cookie-banner button:hover {
+  background: #000;
+}
+
+.refButton {
+  color: black !important;
+}
+
+.project-card {
+  /* background-color: ; */
+  box-shadow: 2px 2px 2px gray;
+}
+
+.text-neon-animated {
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 5px rgba(90, 0, 150, 0.6),
+    0 0 15px rgba(90, 0, 150, 0.5),
+    0 0 30px rgba(90, 0, 150, 0.4),
+    0 0 60px rgba(90, 0, 150, 0.3);
+    overflow-wrap: break-word;
+  /* animation: neonPulse 4s ease-in-out infinite; */
+} 
+
+#eng {
+  background-image: url("Flag_of_the_United_Kingdom_(3-5).svg");
+  background-position: center;
+  background-size: cover;
+   position: fixed !important;
+  top: 20px !important;   
+  left: 20px !important; 
+  z-index: 9999 !important;
+  &:hover {
+    background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
+   
+  }
+}
+
+#hun {
+  background-image: url("Flag_of_Hungary.svg.png");
+  background-position: center;
+  background-size: cover;
+   position: fixed;
+  top: 20px;   
+  left: 60px; 
+  z-index: 9999;
+  &:hover {
+    background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
+   
+  }
+}
+
+.ukr-hero {
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fontFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+ -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}

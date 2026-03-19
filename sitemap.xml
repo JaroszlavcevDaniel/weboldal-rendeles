@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Főoldal - Magyar -->
+  <url>
+    <loc>https://weboldal-rendeles.hu/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://weboldal-rendeles.hu/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://weboldal-rendeles.hu/indexEN.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://weboldal-rendeles.hu/indexUA.html" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Főoldal - Angol -->
+  <url>
+    <loc>https://weboldal-rendeles.hu/indexEN.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://weboldal-rendeles.hu/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://weboldal-rendeles.hu/indexEN.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://weboldal-rendeles.hu/indexUA.html" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Főoldal - Ukrán -->
+  <url>
+    <loc>https://weboldal-rendeles.hu/indexUA.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://weboldal-rendeles.hu/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://weboldal-rendeles.hu/indexEN.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://weboldal-rendeles.hu/indexUA.html" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy Policy - Magyar -->
+  <url>
+    <loc>https://weboldal-rendeles.hu/dataInfo.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://weboldal-rendeles.hu/dataInfo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://weboldal-rendeles.hu/dataInfoEn.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://weboldal-rendeles.hu/dataInfoUA.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Privacy Policy - Angol -->
+  <url>
+    <loc>https://weboldal-rendeles.hu/dataInfoEn.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://weboldal-rendeles.hu/dataInfo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://weboldal-rendeles.hu/dataInfoEn.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://weboldal-rendeles.hu/dataInfoUA.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Privacy Policy - Ukrán -->
+  <url>
+    <loc>https://weboldal-rendeles.hu/dataInfoUA.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://weboldal-rendeles.hu/dataInfo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://weboldal-rendeles.hu/dataInfoEn.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://weboldal-rendeles.hu/dataInfoUA.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

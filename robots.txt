@@ -1,0 +1,26 @@
+# Robots.txt for weboldal-rendeles.hu
+# Allow all main content to be indexed
+User-agent: *
+Disallow: /nyamiIndex.html
+Disallow: /webshop.html
+Disallow: /stylesEN.css
+Disallow: /actionEn.js
+Disallow: /profile.jpg
+Disallow: /logo.jpg
+Disallow: /fonts/
+Disallow: /node_modules/
+Disallow: /*.map$
+
+# Allow crawling for public HTML pages
+Allow: /index.html
+Allow: /indexEN.html
+Allow: /indexUA.html
+Allow: /dataInfo.html
+Allow: /dataInfoEn.html
+Allow: /dataInfoUA.html
+Allow: /#getInContact
+Allow: /#reffy
+
+# Sitemap location
+Sitemap: https://weboldal-rendeles.hu/sitemap.xml
+
