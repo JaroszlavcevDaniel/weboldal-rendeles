@@ -1,0 +1,5 @@
+# BEGIN Sitemap XML MIME fix
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+</IfModule>
+# END Sitemap XML MIME fix
