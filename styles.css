@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  
 }
 /*  HERO ONE */
 header {
@@ -552,8 +553,10 @@ button.btn-dark:hover {
 }
 
 
+
 @media (max-width: 450px) {
  .hatred {
   display: inline !important;
  }
 }
+
