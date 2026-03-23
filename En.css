@@ -5,7 +5,7 @@
 }
 /*  HERO ONE */
 header {
-  background-image: url(backthree.jpg) !important;
+  background-image: url(Intense-black-glitter-background-4K-with-a-dramatic-shimmer.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -368,4 +368,182 @@ button.btn-dark:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
  -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
+}
+
+
+.sectionSlider {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionSlider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDu_sZicPpIabHfZFnckxNIzD5exTWuKcCQ&s') center/cover no-repeat;
+  background-attachment: fixed;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.custom-card {
+  position: absolute;
+  width: 280px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  color: white;
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.prev2 { transform: translateX(-500px) scale(0.7); opacity: 0.2; }
+.prev1 { transform: translateX(-280px) scale(0.85); opacity: 0.5; }
+.active { transform: translateX(0) scale(1); opacity: 1; z-index: 5; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+.next1 { transform: translateX(280px) scale(0.85); opacity: 0.5; }
+.next2 { transform: translateX(500px) scale(0.7); opacity: 0.2; }
+
+.bord {
+    background: linear-gradient(
+    135deg,
+    #f9d42310,
+    #ff4e5010,
+    #8e2de210
+  );
+}
+
+.cta-btn {
+  position: relative;
+  display: inline-block;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+
+  /* gradient háttér */
+  background: linear-gradient(135deg, #e6d302, #3f0d1b);
+  
+  /* finom glow */
+  box-shadow: 0 10px 30px rgba(142,45,226,0.4);
+
+  transition: all 0.4s ease;
+}
+
+/* ✨ mozgó fény réteg */
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+
+/* 🌊 blur glow háttér (parallax feeling) */
+.cta-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(20px);
+  opacity: 0.6;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+/* 🖱 hover */
+.cta-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(142,45,226,0.6);
+}
+
+/* fény átsuhan */
+.cta-btn:hover::before {
+  transform: translateX(100%);
+}
+
+/* glow erősödik */
+.cta-btn:hover::after {
+  filter: blur(30px);
+  opacity: 0.8;
+}
+
+.linker {
+    background: linear-gradient(#0c0c0c, #7e161d, #5f2198) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+   &:hover {
+    background: linear-gradient(#f9d423, #ff4e50, #8e2de2) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+}
+
+/* TECH SECTION */
+
+.tech-section {
+  position: relative;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.tech-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') center/cover no-repeat;
+  background-attachment: fixed;
+  filter: blur(8px) brightness(0.4);
+  z-index: 0;
+}
+
+.tech-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.tech-item {
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+@media (max-width: 450px) {
+ .hatred {
+  display: inline !important;
+ }
 }

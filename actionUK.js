@@ -36,3 +36,49 @@
       console.log('EmailJS hiba:', error);
     });
 });
+
+// SLIDER
+
+const cards = document.querySelectorAll('.custom-card');
+let index = 2;
+
+function update() {
+  cards.forEach((card, i) => {
+    card.className = 'card custom-card';
+
+    const diff = (i - index + cards.length) % cards.length;
+
+    if (diff === 0) card.classList.add('active');
+    else if (diff === 1) card.classList.add('next1');
+    else if (diff === 2) card.classList.add('next2');
+    else if (diff === cards.length - 1) card.classList.add('prev1');
+    else if (diff === cards.length - 2) card.classList.add('prev2');
+  });
+}
+
+function next() {
+  index = (index + 1) % cards.length;
+  update();
+}
+
+setInterval(next, 2500);
+update();
+
+// TECH SECTION
+
+const items = document.querySelectorAll('.tech-item');
+
+items.forEach((item, index) => {
+  const delay = index * 100;
+
+  item.animate([
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(-10px)' },
+    { transform: 'translateY(0px)' }
+  ], {
+    duration: 3000,
+    delay: delay,
+    iterations: Infinity,
+    easing: 'ease-in-out'
+  });
+});

@@ -552,3 +552,8 @@ button.btn-dark:hover {
 }
 
 
+@media (max-width: 450px) {
+ .hatred {
+  display: inline !important;
+ }
+}
