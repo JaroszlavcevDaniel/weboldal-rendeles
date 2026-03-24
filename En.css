@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  
 }
 /*  HERO ONE */
 header {
@@ -90,8 +91,8 @@ header {
 
 .glass-box {
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px); */
 
   border-radius: 20px;
   color: white;
@@ -182,7 +183,7 @@ header {
   );
 }
 
-/* form box */
+
 .contact-box {
   background: #fff;
   border-radius: 16px;
@@ -211,7 +212,7 @@ button.btn-dark:hover {
   background: #000;
 }
 
-/* FOOTER */
+
 
 .footer {
   background: #111;
@@ -249,7 +250,7 @@ button.btn-dark:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 0%;           
+  width: 0%;          
   height: 5px;
   z-index: 9999;
   background: linear-gradient(90deg, #f9d423, #ff4e50, #8e2de2);
@@ -330,39 +331,12 @@ button.btn-dark:hover {
     0 0 15px rgba(90, 0, 150, 0.5),
     0 0 30px rgba(90, 0, 150, 0.4),
     0 0 60px rgba(90, 0, 150, 0.3);
-     overflow-wrap: break-word;
-
+    overflow-wrap: break-word;
   /* animation: neonPulse 4s ease-in-out infinite; */
 } 
 
 
-#hun {
-  background-image: url("Flag_of_Hungary.svg.png");
-  background-position: center;
-  background-size: cover;
-   position: fixed !important;
-  top: 20px !important;   
-  left: 20px !important; 
-  z-index: 9999 !important;
-  &:hover {
-    background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
-   
-  }
-}
 
-#ukr {
-  background-image: url("Flag_of_Ukraine.svg.webp");
-  background-position: center;
-  background-size: cover;
-   position: fixed !important;
-  top: 20px !important;   
-  left: 60px !important; 
-  z-index: 9999 !important;
-  &:hover {
-    background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
-   
-  }
-}
 
 .fontFont {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
@@ -370,6 +344,16 @@ button.btn-dark:hover {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
+.responsive-title {
+  font-size: 2.5rem !important; 
+}
+
+
+@media (max-width: 768px) {
+  .responsive-title {
+    font-size: 1.4rem !important; 
+  }
+}
 
 .sectionSlider {
   height: 400px;
@@ -381,9 +365,9 @@ button.btn-dark:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDu_sZicPpIabHfZFnckxNIzD5exTWuKcCQ&s') center/cover no-repeat;
+  background: url(af1535263b5b06a115e7aca7789460a3.jpg) center/cover no-repeat;
   background-attachment: fixed;
-  filter: brightness(0.4);
+  /* filter: brightness(0.4); */
   z-index: 0;
 }
 
@@ -401,7 +385,7 @@ button.btn-dark:hover {
   width: 280px;
   padding: 20px;
   border-radius: 20px;
-  backdrop-filter: blur(12px);
+  /* backdrop-filter: blur(12px); */
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.2);
   text-align: center;
@@ -464,7 +448,7 @@ button.btn-dark:hover {
   position: absolute;
   inset: 0;
   background: inherit;
-  filter: blur(20px);
+  /* filter: blur(20px); */
   opacity: 0.6;
   z-index: -1;
   transition: all 0.4s ease;
@@ -483,7 +467,7 @@ button.btn-dark:hover {
 
 /* glow erősödik */
 .cta-btn:hover::after {
-  filter: blur(30px);
+  /* filter: blur(30px); */
   opacity: 0.8;
 }
 
@@ -502,17 +486,17 @@ button.btn-dark:hover {
 
 .tech-section {
   position: relative;
-  padding: 20px 0;
-  overflow: hidden;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
 }
 
+/* háttér finom textúra (nem mozog!) */
 .tech-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') center/cover no-repeat;
-  background-attachment: fixed;
-  filter: blur(8px) brightness(0.4);
+  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05), transparent 40%);
   z-index: 0;
 }
 
@@ -524,21 +508,40 @@ button.btn-dark:hover {
   gap: 20px;
 }
 
+/* 🔥 KÁRTYÁK */
 .tech-item {
   padding: 20px;
   text-align: center;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: white;
+  border-radius: 14px;
+
+  /* fake glass */
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+
+  color: #fff;
   font-size: 14px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.5px;
+
+  /* lebegő effekt alap */
+  transform: translateY(0);
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+
+  /* kis glow */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* ✨ lebeg hover */
 .tech-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transform: translateY(-8px) scale(1.03);
+
+  background: rgba(255,255,255,0.1);
+
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.4),
+    0 0 15px rgba(142,45,226,0.3);
 }
 
 
@@ -546,4 +549,31 @@ button.btn-dark:hover {
  .hatred {
   display: inline !important;
  }
+}
+#hun {
+  background-image: url("Flag_of_Hungary.svg.png");
+  background-position: center;
+  background-size: cover;
+   position: fixed !important;
+  top: 20px !important;   
+  left: 20px !important; 
+  z-index: 9999 !important;
+  &:hover {
+    background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
+   
+  }
+}
+
+#ukr {
+  background-image: url("Flag_of_Ukraine.svg.webp");
+  background-position: center;
+  background-size: cover;
+   position: fixed !important;
+  top: 20px !important;   
+  left: 60px !important; 
+  z-index: 9999 !important;
+  &:hover {
+    background-image: url("language-translation-silhouette-icon-other-language-translation-translator-vector.jpg");
+   
+  }
 }
