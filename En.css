@@ -10,7 +10,7 @@ html, body {
 }
 /*  HERO ONE */
 header {
-  background-color: #1a1a1a;
+  background-color: rgb(28, 28, 28);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -102,12 +102,12 @@ header {
 }
 
 .contact-section {
-  background-color: black;
+  background-color: rgb(28, 28, 28);
   color: white;
 }
 
 .contact-box {
-  background: #000000;
+  background: rgb(28, 28, 28);
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -131,12 +131,12 @@ button.btn-dark {
 }
 
 button.btn-dark:hover {
-  background: #000;
+  background: rgb(28, 28, 28);
 }
 
 
 .footer {
-  background: #111;
+  background: rgb(28, 28, 28);
   color: #ccc;
 }
 
@@ -215,7 +215,7 @@ button.btn-dark:hover {
 
 .cookie-banner button {
   border: none;
-  background: #111;
+  background: rgb(28, 28, 28);
   color: #fff;
   border-radius: 10px;
   padding: 6px 12px;
@@ -253,7 +253,7 @@ button.btn-dark:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #1a1a1a;
+  background-color: rgb(28, 28, 28);
   background-attachment: fixed;
   z-index: 0;
 }
@@ -271,7 +271,7 @@ button.btn-dark:hover {
   position: absolute;
   width: 300px;
   padding: 20px;
-  background-color: rgba(9, 8, 8, 0.08);
+  background-color: rgb(28, 28, 28);
   text-align: center;
   color: rgb(8, 8, 8);
 font-weight: bolder;
@@ -299,7 +299,7 @@ font-weight: bolder;
   border: none;
   overflow: hidden;
   z-index: 4;
-  background: #1b1a14;
+  background: rgb(28, 28, 28);
   transition: all 0.4s ease;
   /* font-size: 15px; */
 }
@@ -369,7 +369,9 @@ font-weight: bolder;
   background-image: url(https://i.etsystatic.com/10317699/r/il/658b5f/826263815/il_fullxfull.826263815_dgmf.jpg);
   background-size: cover;
 }
-
+.tech-tech {
+  background-color: rgb(28, 28, 28);
+}
 /* háttér finom textúra (nem mozog!) */
 .tech-section::before {
   content: "";
@@ -392,7 +394,7 @@ font-weight: bolder;
 .tech-item {
   padding: 20px;
   text-align: center;
-background-color: black;
+background-color: rgb(28, 28, 28);
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.5px;
