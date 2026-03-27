@@ -8,14 +8,14 @@ html, body {
   box-sizing:border-box;
   
 }
-/*  HERO ONE */
+
 header {
   background-color: #1a1a1a;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/*  HERO TWO */
+
 .hero2 {
   background: rgb(28, 28, 28);
   height: 500px;
@@ -66,7 +66,7 @@ header {
 .textShadow {
   text-shadow: 5px 5px 5px #5b5b5b !important;
 }
-/*  FONT  */
+
 .archivo-black-regular {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
@@ -76,7 +76,7 @@ header {
 .parallax-section {
   min-height: 80vh;
 
-  /*  PARALLAX  SZEKCIÓ*/
+
   background-image: url(istockphoto-2220516062-612x612.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -186,7 +186,7 @@ button.btn-dark:hover {
   height: 28px;
 }
 
-/* cookie banner */
+
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -301,10 +301,9 @@ font-weight: bolder;
   z-index: 4;
   background: #1b1a14;
   transition: all 0.4s ease;
-  /* font-size: 15px; */
+  
 }
 
-/* ✨ mozgó fény réteg */
 .cta-btn::before {
   content: "";
   position: absolute;
@@ -320,32 +319,26 @@ font-weight: bolder;
   z-index: 2;
 }
 
-/* 🌊 blur glow háttér (parallax feeling) */
 .cta-btn::after {
   content: "";
   position: absolute;
   inset: 0;
   background: inherit;
-  /* filter: blur(20px); */
   opacity: 0.6;
   z-index: -1;
   transition: all 0.4s ease;
 }
 
-/* 🖱 hover */
 .cta-btn:hover {
   transform: translateY(-3px) scale(1.03);
   color: wheat;
 }
 
-/* fény átsuhan */
 .cta-btn:hover::before {
   transform: translateX(100%);
 }
 
-/* glow erősödik */
 .cta-btn:hover::after {
-  /* filter: blur(30px); */
   opacity: 0.8;
 }
 
@@ -359,8 +352,6 @@ font-weight: bolder;
     -webkit-text-fill-color: transparent !important;
   }
 }
-
-/* TECH SECTION */
 
 .tech-section {
   position: relative;
@@ -418,12 +409,6 @@ background-color: rgb(28, 28, 28);
     0 0 15px rgba(142,45,226,0.3);
 }
 
-/* 
-@media (max-width: 450px) {
- .hatred {
-  display: inline !important;
- }
-} */
 
 #eng {
   position: fixed !important;
@@ -561,3 +546,30 @@ background-color: rgb(28, 28, 28);
 }
 }
 
+
+.zDown {
+  position: relative;
+  z-index: -3 !important;
+   color: wheat;
+  font-size: clamp(1.8rem, 5vw, 4rem);
+}
+.zUp {
+  position: relative;
+  z-index: 3 !important;
+   color: wheat;
+  font-size: clamp(1.8rem, 5vw, 4rem);
+}
+
+.textContur {
+    -webkit-text-stroke: 1px black;
+   
+}
+@supports not (-webkit-text-stroke: 1px black) {
+  .text-outline {
+    text-shadow:
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black;
+  }
+}
