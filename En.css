@@ -525,13 +525,25 @@ background-color: rgb(28, 28, 28);
 }
 
 @media (max-width: 768px) {
+
+ .zDown {
+    position: relative;
+    z-index: 100 !important;
+  }
+
+  .zUp {
+     z-index: 2 !important;
+  }
+
   .wide-image {
-    top: 0;
+    z-index: 0;
+    top: 60px;
     transform: translateX(-50%) scale(1.2);
   }
 
   .wide-image-two {
-    display: none; /
+    display: none; 
+    z-index: 0;
   }
 
   .ctaTextcta {

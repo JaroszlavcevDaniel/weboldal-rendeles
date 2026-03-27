@@ -515,12 +515,23 @@ background-color: rgb(28, 28, 28);
 
 @media (max-width: 768px) {
   .wide-image {
-    top: 0;
+    z-index: 0;
+    top: 50px;
     transform: translateX(-50%) scale(1.2);
   }
 
+  .zDown {
+    position: relative;
+    z-index: 100 !important;
+  }
+
+  .zUp {
+     z-index: 2 !important;
+  }
+
   .wide-image-two {
-    display: none; /
+    display: none; 
+    z-index: 0;
   }
 
   .ctaTextcta {
@@ -549,10 +560,11 @@ background-color: rgb(28, 28, 28);
 
 .zDown {
   position: relative;
-  z-index: -3 !important;
+  z-index: -3;
    color: wheat;
   font-size: clamp(1.8rem, 5vw, 4rem);
 }
+
 .zUp {
   position: relative;
   z-index: 3 !important;
@@ -573,3 +585,4 @@ background-color: rgb(28, 28, 28);
        1px  1px 0 black;
   }
 }
+
