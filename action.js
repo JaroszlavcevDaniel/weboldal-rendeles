@@ -82,3 +82,32 @@ items.forEach((item, index) => {
     easing: 'ease-in-out'
   });
 });
+
+
+// KNIGHT !!!!!!
+const knight = document.getElementById("knight");
+const header = document.querySelector("header");
+
+let speed = 2;
+let currentLeft = -150; // indul balról kívül
+
+function animateKnight() {
+  currentLeft += speed;
+
+  const maxX = header.offsetWidth;
+
+  // ha még a képernyőn van
+  if (currentLeft < maxX) {
+    knight.style.left = currentLeft + "px";
+    knight.style.display = "block";
+    knight.classList.add("riding");
+  } else {
+    // ha elérte a végét → eltűnik
+    knight.style.display = "none";
+    knight.classList.remove("riding");
+  }
+
+  requestAnimationFrame(animateKnight);
+}
+
+animateKnight();

@@ -586,3 +586,25 @@ background-color: rgb(28, 28, 28);
   }
 }
 
+/* KNIGHT */
+
+  #knight {
+  position: absolute;
+  top: 80%;
+  left: -150px;
+  width: 128px;
+  height: 128px;
+  background-image: url('Gemini_Generated_Image_rkn4u7rkn4u7rkn4-removebg-preview.png');
+  background-size: 256px 128px;
+  background-position: 0 0;
+  z-index: 999;
+}
+
+@keyframes ride {
+  from { background-position: 0 0; }
+  to   { background-position: -256px 0; }
+}
+
+.riding {
+  animation: ride 0.5s steps(2) infinite;
+}
