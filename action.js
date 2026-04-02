@@ -88,7 +88,7 @@ items.forEach((item, index) => {
 const knight = document.getElementById("knight");
 const header = document.querySelector("header");
 
-let speed = 2;
+let speed = 1.8;
 let currentLeft = -150; // indul balról kívül
 
 function animateKnight() {
@@ -111,3 +111,62 @@ function animateKnight() {
 }
 
 animateKnight();
+
+// KNIGHT TWOOO
+
+const knightTwo = document.getElementById("knightTwo");
+let speedTwo = 0.5;
+let currentLeftTwo = -300; 
+
+let frame = 1;
+setInterval(() => {
+    frame = (frame === 1) ? 2 : 1;
+    if (knightTwo.style.display !== "none") {
+        knightTwo.style.backgroundImage = `url('knight${frame}.png')`;
+    }
+}, 250);
+
+function animateKnightTwo() {
+    currentLeftTwo += speedTwo;
+
+    const maxXTwo = document.querySelector('header').offsetWidth;
+
+    if (currentLeftTwo < maxXTwo) {
+        knightTwo.style.left = currentLeftTwo + "px";
+        knightTwo.style.display = "block";
+    } else {
+        knightTwo.style.display = "none";
+    }
+
+    requestAnimationFrame(animateKnightTwo);
+}
+
+animateKnightTwo();
+
+// MAN ANIMATION FIRST 
+
+const img = document.getElementById("aboutImage");
+
+const newSrc = "574a186db5e4fead049d07eb6f289f38-removebg-preview.png";
+const  originalSrc = "eerverv.png";
+
+// hol váltson (px-ben)
+const triggerPoint = window.innerHeight * 0.3;
+
+let isSwitched = false;
+
+window.addEventListener("scroll", () => {
+  const rect = img.getBoundingClientRect();
+
+  // amikor leér a trigger ponthoz
+  if (rect.top < triggerPoint && !isSwitched) {
+    img.src = newSrc;
+    isSwitched = true;
+  }
+
+  // amikor visszascrollolsz
+  if (rect.top >= triggerPoint && isSwitched) {
+    img.src = originalSrc;
+    isSwitched = false;
+  }
+});
