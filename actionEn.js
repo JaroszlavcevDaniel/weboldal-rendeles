@@ -82,3 +82,135 @@ items.forEach((item, index) => {
     easing: 'ease-in-out'
   });
 });
+
+
+
+// KNIGHT !!!!!!
+const knight = document.getElementById("knight");
+const header = document.querySelector("header");
+
+let speed = 1.8;
+let currentLeft = -150; 
+
+function animateKnight() {
+  currentLeft += speed;
+
+  const maxX = header.offsetWidth;
+
+  if (currentLeft < maxX) {
+    knight.style.left = currentLeft + "px";
+    knight.style.display = "block";
+    knight.classList.add("riding");
+  } else {
+    knight.style.display = "none";
+    knight.classList.remove("riding");
+  }
+
+  requestAnimationFrame(animateKnight);
+}
+
+animateKnight();
+
+// KNIGHT TWOOO
+
+const knightTwo = document.getElementById("knightTwo");
+let speedTwo = 0.5;
+let currentLeftTwo = -300; 
+
+let frame = 1;
+setInterval(() => {
+    frame = (frame === 1) ? 2 : 1;
+    if (knightTwo.style.display !== "none") {
+        knightTwo.style.backgroundImage = `url('knight${frame}.png')`;
+    }
+}, 250);
+
+function animateKnightTwo() {
+    currentLeftTwo += speedTwo;
+
+    const maxXTwo = document.querySelector('header').offsetWidth;
+
+    if (currentLeftTwo < maxXTwo) {
+        knightTwo.style.left = currentLeftTwo + "px";
+        knightTwo.style.display = "block";
+    } else {
+        knightTwo.style.display = "none";
+    }
+
+    requestAnimationFrame(animateKnightTwo);
+}
+
+animateKnightTwo();
+
+// MAN ANIMATION FIRST 
+
+const img = document.getElementById("aboutImage");
+
+const newSrc = "574a186db5e4fead049d07eb6f289f38-removebg-preview.png";
+const  originalSrc = "ululu.png";
+
+const triggerPoint = window.innerHeight * 0.3;
+
+let isSwitched = false;
+
+window.addEventListener("scroll", () => {
+  const rect = img.getBoundingClientRect();
+
+  if (rect.top < triggerPoint && !isSwitched) {
+    img.src = newSrc;
+    isSwitched = true;
+  }
+
+  if (rect.top >= triggerPoint && isSwitched) {
+    img.src = originalSrc;
+    isSwitched = false;
+  }
+});
+
+// MAN ANIMATION SECOND 
+
+const imgTwo = document.getElementById("aboutImageTwo");
+
+const newNewSrc = "uhuhu.png";
+const originalSrcSrc = "vintage-engraving-of-a-victorian-lady-seated-at-a-table-reading-a-FDWEYB-removebg-preview.png";
+
+const triggerPointTwo = window.innerHeight * 0.3;
+
+let isSwitchedTwo = false;
+
+window.addEventListener("scroll", () => {
+  const rect = imgTwo.getBoundingClientRect();
+
+  if (rect.top < triggerPointTwo && !isSwitchedTwo) {
+    imgTwo.src = newNewSrc;
+    isSwitchedTwo = true;
+  }
+
+  if (rect.top >= triggerPointTwo && isSwitchedTwo) {
+    imgTwo.src = originalSrcSrc;
+    isSwitchedTwo = false;
+  }
+});
+
+// GIRL ANIMA
+
+const section = document.querySelector(".parallax-section");
+
+const newBg = "url('iuvewewruw.png')";
+const originalBg = "url('istockphoto-2220516062-612x612.jpg')";
+
+let isSwitchedThree = false;
+
+window.addEventListener("scroll", () => {
+  const rect = section.getBoundingClientRect();
+
+  if (rect.top < window.innerHeight * 0.1 && !isSwitchedThree) {
+    section.style.backgroundImage = newBg;
+    isSwitchedThree = true;
+  }
+
+  if (rect.top >= window.innerHeight * 0.1 && isSwitchedThree) {
+    section.style.backgroundImage = originalBg;
+    isSwitchedThree = false;
+  }
+});

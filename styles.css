@@ -241,6 +241,13 @@ button.btn-dark:hover {
 @media (max-width: 768px) {
   .responsive-title {
     font-size: 1.4rem !important; 
+ 
+  }
+     .mobilNONE, .glow {
+      display: none !important;
+    } 
+  .wide-image-four {
+    left: 40%;
   }
 }
 
@@ -586,7 +593,6 @@ background-color: rgb(28, 28, 28);
   }
 }
 
-/* KNIGHT */
 
   #knight {
   position: absolute;
@@ -594,7 +600,7 @@ background-color: rgb(28, 28, 28);
   left: -150px;
   width: 128px;
   height: 128px;
-  background-image: url('Gemini_Generated_Image_rkn4u7rkn4u7rkn4-removebg-preview.png');
+  background-image: url('owevcew.png');
   background-size: 256px 128px;
   background-position: 0 0;
   z-index: 999;
@@ -706,3 +712,13 @@ background-color: rgb(28, 28, 28);
 .g3 { animation-delay: 2.1s; }
 .g4 { animation-delay: 2.5s; }
 
+@supports (-webkit-touch-callout: none) {
+  @media only screen and (max-width: 1024px) {
+
+    .parallax-section {
+      background-attachment: scroll;
+      background-position: center top;
+    }
+
+  }
+}
