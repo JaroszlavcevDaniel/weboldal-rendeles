@@ -190,23 +190,32 @@ window.addEventListener("scroll", () => {
 
 // GIRL ANIMA
 
-const section = document.querySelector(".parallax-section");
+// const section = document.querySelector(".parallax-section");
 
-const newBg = "url('iuvewewruw.png')";
-const originalBg = "url('istockphoto-2220516062-612x612.jpg')";
+// const newBg = "url('iuvewewruw.png')";
+// const originalBg = "url('istockphoto-2220516062-612x612.jpg')";
 
-let isSwitchedThree = false;
+// let isSwitchedThree = false;
 
-window.addEventListener("scroll", () => {
-  const rect = section.getBoundingClientRect();
+// window.addEventListener("scroll", () => {
+//   const rect = section.getBoundingClientRect();
 
-  if (rect.top < window.innerHeight * 0.1 && !isSwitchedThree) {
-    section.style.backgroundImage = newBg;
-    isSwitchedThree = true;
-  }
+//   if (rect.top < window.innerHeight * 0.1 && !isSwitchedThree) {
+//     section.style.backgroundImage = newBg;
+//     isSwitchedThree = true;
+//   }
 
-  if (rect.top >= window.innerHeight * 0.1 && isSwitchedThree) {
-    section.style.backgroundImage = originalBg;
-    isSwitchedThree = false;
-  }
-});
+//   if (rect.top >= window.innerHeight * 0.1 && isSwitchedThree) {
+//     section.style.backgroundImage = originalBg;
+//     isSwitchedThree = false;
+//   }
+// });
+
+// const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+// if (isSafari && /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+//   document.querySelector(".parallax-section").style.backgroundAttachment = "scroll";
+//     // document.querySelector(".knight").style.display = "none";
+//     //     document.querySelector(".knightTwo").style.display = "none";
+
+// }

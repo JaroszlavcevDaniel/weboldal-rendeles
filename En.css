@@ -250,11 +250,13 @@ button.btn-dark:hover {
   }
 
   #knight  {
-    top: 70% !important;
+   display: none; 
+
   }
 
   #knightTwo {
-    top: 85% !important;
+   display: none; 
+
   }
 }
 

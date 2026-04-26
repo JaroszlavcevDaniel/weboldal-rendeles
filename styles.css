@@ -249,6 +249,16 @@ button.btn-dark:hover {
   .wide-image-four {
     left: 40%;
   }
+
+     #knight  {
+    display: none; 
+
+  }
+
+  #knightTwo {
+   display: none; 
+
+  }
 }
 
 .sectionSlider {
