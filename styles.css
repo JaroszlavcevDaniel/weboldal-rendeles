@@ -732,3 +732,26 @@ background-color: rgb(28, 28, 28);
 
   }
 }
+
+@media (min-width: 1500px) {
+  .wide-image {
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%) scale(1.1);
+    transform-origin: bottom center;
+  }
+
+  .wide-image-two {
+    top: -350px !important;
+  }
+}
+
+
+.bagger {
+  background-color: rgb(28, 28, 28);
+}
